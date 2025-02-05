@@ -9,11 +9,20 @@
     <h3>Course Registation Form</h3> 
     <div>
         <label>Enter your name:</label>
-        <label>First name</label>
-        <input> <!-- first name-->
-        <input type="text" title="middle name"> 
-        <input type="text"  placeholder="last name">
+        <label for="fname">First name</label>
+        <input id="fname" class="empname" name="empname" value="neo"> <!-- first name-->
+        <input id="mname" type="text" title="middle name" class="empname" name="empname"> 
+        <input id="lname" type="text"  placeholder="last name" class="empname" name="empname">
     </div>
    
+
+
+
+    <script>
+        // to access individual element
+        document.getElementById("fname"); //single element
+        document.getElementsByName("empname"); // collection of elements
+        // loop over the collection : extract value of every element
+    </script>
 </body>
 </html>
