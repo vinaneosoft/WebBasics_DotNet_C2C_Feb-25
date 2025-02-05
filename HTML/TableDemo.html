@@ -4,26 +4,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tables</title>
-    <style>
-        #emptable,  #emptable td,  #emptable th{
+   <style>
+        /*2 table have common class*/
+        .tables,  .tables td,  .tables th{
             border: 1px solid pink;
             border-collapse: collapse;
+            padding: 10px;
         }
-        #emptable1{
-            border-collapse: collapse;
+
+        tbody{
+            background: gray;
         }
-    </style>
+        thead{
+            background: darkcyan;
+        }
+        tfoot{
+            background: lightcoral;
+        }
+    </style> 
 </head>
 <body>
-    <table border="2" id="emptable1">
+    <!-- no partition : implicity partition : tbody-->
+    <table border="2" >
         <tr><th>ID</th><th>NAME</th></tr>
         <tr><td>101</td><td>Priya</td></tr>
         <tr><td>101</td><td>Priya</td></tr>
         <tr><td>101</td><td>Priya</td></tr>
         <tr><td>101</td><td>Priya</td></tr>
     </table>
-
-    <table id="emptable">
+    <!-- explicit paritions : thead, tbody-->
+    <table id="emptable"  class="tables">
         <thead>
             <tr><th>ID</th><th>NAME</th></tr>
         </thead>
@@ -34,17 +44,21 @@
             <tr><td>101</td><td>Priya</td></tr>
         </tbody>
     </table>
-
-  <!--   <table>
+<hr>
+     <table class="tables">
+        <caption>STUDENTS MARKS</caption>
         <thead>
-            <tr><th>ID</th><th>NAME</th></tr>
+            <tr><th>STUDENT ID</th><th>PHY</th> <th>CHEM</th> <th>MATHS</th></tr>
         </thead>
         <tbody>
-            <tr><th>h1</th><td>101</td><td>Priya</td></tr>
-            <tr><th>h2</th><td>101</td><td>Priya</td></tr>
-            <tr><th>h3</th><td>101</td><td>Priya</td></tr>
-            <tr><th>h4</th><td>101</td><td>Priya</td></tr>
+            <tr><th>101</th><td>78</td><td>89</td><td>90</td></tr>
+            <tr><th>102</th><td>89</td><td>66</td><td>88</td></tr>
+            <tr><th>103</th><td>90</td><td>90</td><td>98</td></tr>
+            <tr><th>104</th><td>76</td><td>77</td><td>79</td></tr>
         </tbody>
-    </table> -->
+        <tfoot>
+            <tr><th>Average</th><td>80</td><td>72</td><td>85</td></tr>
+        </tfoot>
+    </table> 
 </body>
 </html>
