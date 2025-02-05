@@ -6,17 +6,30 @@
     <title>Input Controls</title>
 </head>
 <body>
-    <h3>Course Registation Form</h3> 
+    <h3>Neosoft Course Registation Form</h3> 
+    <form action="">
+    <div>
+        <input type="text" value="Neosoft Pvt Ltd." title="company name" readonly>
+    </div>
     <div>
         <label>Enter your name:</label>
         <label for="fname">First name</label>
-        <input id="fname" class="empname" name="empname" value="neo"> <!-- first name-->
+        <input id="fname" class="empname" name="empname" value="neo" minlength="2" required> 
         <input id="mname" type="text" title="middle name" class="empname" name="empname"> 
-        <input id="lname" type="text"  placeholder="last name" class="empname" name="empname">
+        <input id="lname" type="text"  placeholder="last name" class="empname" name="empname" required>
     </div>
-   
-
-
+     <div>
+        <label for="age">Enter age:</label>
+        <input type="number" id="age" min="20" max="40" required> <!-- 20 to 40-->
+    </div>
+    <div>
+        <input type="submit">
+    </div>
+    </form>
+    <!--
+    validation attributes :
+    minlength
+    required-->
 
     <script>
         // to access individual element
