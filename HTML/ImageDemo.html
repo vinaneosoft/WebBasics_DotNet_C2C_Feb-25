@@ -5,9 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Images</title>
     <style>
-        #img2{
-            height: 400px;
+        #img2,#img3{
+            height: 500px;
             width: 400px;
+        }
+        figure{
+            border: 4px double red;
+        }
+        figcaption{
+            border: 4px solid yellow;
         }
     </style>
 </head>
@@ -16,5 +22,33 @@
     <img src="https://imgmediagumlet.lbb.in/media/2023/02/63e0e2ff589b5922d0a3d715_1675682559755.jpg" 
     alt="Sunset in mumbai" height="300" width="300">
     <img id="img2" src="../Resources/sunsetmarine.jpg" alt="sunset on marine drive">
+    <img id="img3" src="./resources/images/sunsetmarine.jpg" alt="sunset on marine drive" height="800" width="600">
+    <hr>
+    <h4>Clickable Images</h4>
+    <a href="https://9gag.com/gag/ajg9dGx" target="_blank" rel="noopener">
+        <img src="./resources/images/sunsetmarine.jpg" alt="sunset" height="100" width="100">
+    </a>
+    <hr>
+    <h4>Embedding resources in iframe on click</h4>
+    <a href="https://en.wikipedia.org/wiki/Sunset" target="resoureceframe"> <!-- target = name of iframe-->
+        SUNSET
+    </a>
+    <iframe id="frame1" name="resoureceframe"></iframe>
+    <iframe id="frame2" name="resoureceframe"></iframe>
+    <hr>
+    <article>
+        <h3>Beautiful Sunset in Mumbai</h3>
+        <figure>
+            <figcaption>sunset</figcaption>
+            <img src="https://imgmediagumlet.lbb.in/media/2023/02/63e0e2ff589b5922d0a3d715_1675682559755.jpg" 
+            alt="Sunset in mumbai" height="300" width="300">
+           
+        </figure>
+        <figure>
+                <img src="./resources/images/sunsetmarine.jpg" 
+                alt="Sunset in mumbai" height="300" width="300">
+                <figcaption>sunset</figcaption>
+        </figure>
+    </article>
 </body>
 </html>
