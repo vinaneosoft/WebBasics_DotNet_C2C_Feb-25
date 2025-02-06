@@ -20,6 +20,57 @@
         </div>
     </details>
     
-  
-</body>
+  <!-- embed any type of resource in web page : iframe, embed, object
+   image, audio, video, document, webpage 
+   
+   specially for audio : audio tag
+   video for video : video tag
+   image : picture tag
+   -->
+
+   <!-- controls : compulsory attribute-->
+
+<label for="">listen to this sample audio:</label>
+<audio src="./resources/audios/sampleaudio.mp3" autoplay muted loop controls>
+</audio>
+<hr>
+<audio  src="./resources/audiosss/sampleaudio.mp3" autoplay muted loop controls>
+</audio>
+<audio controls>
+    <source src="./resources/audioss/sampleaudio.mp3" type="audio/mp3">
+    <source src="./resources/audios/sampleaudio.ogg" type="audio/ogg">
+    <source src="./resources/audios/sampleaudio.mp3" type="audio/mp3">
+    <source src="./resources/audioss/sampleaudio.mp3" type="audio/mp3"> 
+    <source src="./resources/audios/sampleaudio.wav" type="audio/wav">
+</audio>
+<hr>
+<video height="200" width="300" src="./resources/videos/big_buck_bunny_720p_1mb.mp4"  muted  controls>
+</video>
+<hr>
+<video height="200" width="300" src="./resources/videos/big_buck_bunny_720p_1mb.mkv"  muted  controls>
+</video>
+<video muted controls height="200" width="300">
+    <source src="./resources/videos/big_buck_bunny_720p_1mb.mkv" type="video/mkv">
+    <source src="./resources/videos/big_buck_bunny_720p_1mb.mp4" type="video/mp4">
+</video>
+<!-- source : multiple alternative media resources for media elements-->
+<hr>
+<h3>IFRAME (any resource)</h3>
+<iframe  title="samplepdf" src="./resources/documents/sample-1.pdf" width="500"></iframe>
+<iframe  title="samplepdf" src="./resources/documents/SachinArticle.txt" width="500"></iframe>
+<!-- image, -->
+<iframe width="560" height="315" 
+src="https://www.youtube.com/embed/RVGdeksorV8?si=sB1Qm-qjcTLontYH" 
+title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+referrerpolicy="strict-origin-when-cross-origin" 
+allowfullscreen></iframe>
+
+<embed type="video/mp4" 
+src="./resources/videos/big_buck_bunny_720p_1mb.mp4" 
+width="250" height="200" />
+
+<object type="application/pdf" 
+data="./resources/documents/sample-1.pdf" 
+width="250" height="200"></object>
+
 </html>
