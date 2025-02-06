@@ -7,7 +7,7 @@
 </head>
 <body>
     <h3>Neosoft Course Registation Form</h3> 
-    <form action="servlet path">
+    <form action="servlet path" method="post">
     <div>
         <input type="text" value="Neosoft Pvt Ltd." title="company name" readonly>
     </div>
@@ -20,7 +20,7 @@
     </div>
     <div>
         <label for="age">Enter age:</label>
-        <input type="number" id="age" min="20" max="40" required> <!-- 20 to 40-->
+        <input type="number" name="age" id="age" min="20" max="40" required> <!-- 20 to 40-->
     </div>
     <div>
         <label for="mobile">Enter Mobile number:</label>
@@ -32,7 +32,7 @@
     </div>
     <div>
         <label for="">Select Courses to entroll</label>
-        <input type="checkbox" id="cb1"  name="courses" value="web basics"><label for="cb1">WEB BASICS</label>
+        <input required checked type="checkbox" id="cb1"  name="courses" value="web basics"><label for="cb1" >WEB BASICS</label>
         <input type="checkbox" id="cb2"  name="courses" value="react"><label for="cb2">REACT</label>
         <input type="checkbox" id="cb3"  name="courses" value="angular"><label for="cb3">ANGULAR</label>
         <input type="checkbox" id="cb4"  name="courses" value="node"><label for="cb4">NODE</label>
@@ -44,6 +44,15 @@
         <input type="radio" id="gender3" class="gender" name="gender"  value="Other"><label for="gender3">Other</label>
     </div>
     <div>
+        <label for="department">Select your Department:</label>
+        <select name ="deparment" id="department">
+            <option value="dotnet" selected>Dot Net</option>
+            <option value="devops">DevOps</option>
+            <option value="javaweb">Java Web</option>
+            <option value="learninganddevelopment">L&D</option>
+        </select>
+    </div>
+    <div>
         <label for="pass">Set Password:</label>
         <input type="password" id="pass" name="password" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{6,10}$" title="password must contain atleast one small letter, capital letter, digit, special symbol @$!%*?& and password must be 6 to 10 characters long" required>
     </div>
@@ -51,7 +60,6 @@
         <label for="cpass">Confirm Password:</label>
         <input type="" id="cpass" name="password" required>
     </div>
-    <!-- , image, hidden, select, textarea-->
     <div>
         <!-- <button type="submit">ENROLL</button> -->
        <!--  <input type="submit" value="ENROLL"> -->
@@ -60,9 +68,10 @@
     </button> 
     <input type="image" src="./resources/images/enroll.png" height="100" width="100" title="enroll" >
     <input type="reset">
+    <input type="hidden" name="action" value="register">
     </div>
     </form>
-     
+  
     <script>
         // to access individual element
         document.getElementById("fname"); //single element
@@ -70,6 +79,8 @@
         // loop over the collection : extract value of every element
 
         courses=['webbasics','react','angular','node']
+
+        departments= []
     </script>
 </body>
 </html>
