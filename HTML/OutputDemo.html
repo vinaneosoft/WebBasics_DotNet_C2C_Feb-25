@@ -28,9 +28,22 @@
     </form>
     <p>
         <span>My Name is : <b id="upper1"> </b></span>
+        <span>My name is : <input type="text" id="uppercs" title="uppercasename"></span>
     </p>
 
     <hr>
-
+    <!-- output tag-->
+    <form >
+        <input id="myname2" type="text" placeholder="enter your name" 
+          oninput="upper2.value=myname2.value.toUpperCase();
+          same.value=myname2.value;
+          lower.value=myname2.value.toLowerCase()">
+    </form>
+    <p>
+        <span>My Name is : <b> <output id="upper2"></output> </b></span>
+        <i><output id="same"></output> </i>
+        <p><output id="lower"></output></p> 
+    </p>
+    <i></i>
 </body>
 </html>
