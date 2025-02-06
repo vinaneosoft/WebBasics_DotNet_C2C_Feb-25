@@ -45,25 +45,24 @@
     </div>
     <div>
         <label for="pass">Set Password:</label>
-        <input type="password" id="pass" name="password" pattern="" required>
+        <input type="password" id="pass" name="password" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{6,10}$" title="password must contain atleast one small letter, capital letter, digit, special symbol @$!%*?& and password must be 6 to 10 characters long" required>
     </div>
     <div>
         <label for="cpass">Confirm Password:</label>
         <input type="" id="cpass" name="password" required>
     </div>
-    <!-- image, hidden-->
+    <!-- , image, hidden, select, textarea-->
     <div>
-        <input type="submit">
+        <!-- <button type="submit">ENROLL</button> -->
+       <!--  <input type="submit" value="ENROLL"> -->
+   <button type="submit" title="entroll">
+        <img src="./resources/images/submit.png" alt="submit" height="100" width="100">
+    </button> 
+    <input type="image" src="./resources/images/enroll.png" height="100" width="100" title="enroll" >
+    <input type="reset">
     </div>
     </form>
-    <!--
-    validation attributes :
-    minlength
-    required-->
-
-
-
-
+     
     <script>
         // to access individual element
         document.getElementById("fname"); //single element
@@ -74,3 +73,4 @@
     </script>
 </body>
 </html>
+
