@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canvas</title>
+    <style>
+        canvas{
+            border: 3px solid;
+        }
+        #canvas2{
+            height: 300px;
+            width: 500px;
+        }
+    </style>
+</head>
+<body>
+    <canvas height="300" width="500" id="canvas1"></canvas>
+    <hr>
+    <canvas id="canvas2"></canvas>
+    <script>
+       const c1=document.getElementById("canvas1");
+       const c2=document.getElementById("canvas2")
+       const context1=c1.getContext('2d');
+       const context2=c2.getContext('2d');
+    </script>
+    </script>
+</body>
+</html>
