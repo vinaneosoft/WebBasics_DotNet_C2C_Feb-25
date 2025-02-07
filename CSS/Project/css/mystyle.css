@@ -16,3 +16,17 @@ p{
 .bgcol{
     background-color: rgb(239, 239, 92);
 }
+/*set textcolor to tags having attribute type*/
+[type]{
+    color: darkorange;
+}
+/*set border to inputfields having attribute type*/
+input[type]{
+    border: 5px blue solid;
+}
+/*set dimensions to email field*/
+input[type='email']{
+    width: 200px;
+    height: 30px;
+}
+
