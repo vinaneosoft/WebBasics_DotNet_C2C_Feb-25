@@ -1,0 +1,18 @@
+/*give darkmagenta color to all paragraphs of web application*/
+
+/*ele sel*/
+p{
+    color: darkmagenta;
+}
+/*make 1st paragraph all letter capital on all web pages */
+.first{
+    text-transform: uppercase;
+}
+/*1st paragraph of contact page should have border*/
+#firstoncontact{
+    border: 2px solid;
+}
+/*1st and last paragraph of contact page should have background color*/
+.bgcol{
+    background-color: rgb(239, 239, 92);
+}
