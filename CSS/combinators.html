@@ -4,9 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Combinators</title>
+    <style>
+        /*select all paragraph descendant of section : ' ' (space)*/
+        /*id selector element selector*/
+        #section1 p{
+            background-color: aliceblue;
+        }
+         /*select all direct paragraph childs of section : '>' */
+         #section1 > p{
+           color: darkred;
+        }
+    </style>
 </head>
 <body>
-    <section>
+    <section id="section1">
         <p>
             1. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa voluptates iste reiciendis fugit excepturi illum dicta beatae eos quae deserunt blanditiis
              voluptatibus quas fuga, vel ipsa odit possimus distinctio dignissimos.
@@ -16,12 +27,28 @@
             architecto rerum temporibus explicabo nesciunt doloribus reiciendis ipsa.
         </p>
         <footer>
+            <div>
+                div Lorem ipsum, dolor sit amet consectetur adipisicing elit. Modi nulla libero minus qui molestiae delectus beatae error cum, sint odio rem exercitationem
+                 dolorum fuga repellat architecto id blanditiis fugit deleniti!
+            </div>
             <p>3. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex quam magnam ea? Dolorum temporibus beatae qui eligendi quae obcaecati doloribus commodi 
                 dignissimos eaque. Fuga error sed voluptatibus quidem quae in!</p>
         </footer>
     </section>
+    <hr>
 <p> 4. Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae quibusdam, alias, quod commodi iste ipsam adipisci, obcaecati perferendis ipsa voluptate quas earum magni. 
     Expedita iure quia deleniti quis laboriosam porro!
 </p>
+<hr>
+<section>
+    <p>
+        1. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique dignissimos quae sequi hic recusandae ipsam asperiores rem, numquam distinctio? Atque tempore dicta 
+        architecto rerum temporibus explicabo nesciunt doloribus reiciendis ipsa.
+    </p>
+    <footer>
+        <p>2. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex quam magnam ea? Dolorum temporibus beatae qui eligendi quae obcaecati doloribus commodi 
+            dignissimos eaque. Fuga error sed voluptatibus quidem quae in!</p>
+    </footer>
+</section>
 </body>
 </html>
