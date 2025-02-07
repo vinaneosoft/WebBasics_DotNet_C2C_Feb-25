@@ -15,7 +15,7 @@
     </style>
 </head>
 <body>
-    <canvas height="300" width="500" id="canvas1"></canvas>
+    <canvas height="300" width="800" id="canvas1"></canvas>
     <hr>
     <canvas id="canvas2"></canvas>
     <script>
@@ -25,10 +25,38 @@
        const context2=c2.getContext('2d');
        context1.rect(20, 20, 100, 100);
        context1.stroke();
-       context2.rect(20, 20, 100, 100);
-       context2.stroke();
+       context1.beginPath();
+       context1.arc(100, 200, 50, 0, Math.PI / 2); /*last p bydefault : false: clockwise */
+       context1.stroke();
+       context1.beginPath();
+       context1.arc(300, 200, 50, 0, Math.PI / 2, true);
+       context1.stroke();
+       context1.beginPath();
+       context1.moveTo(500, 100);
+       context1.lineTo(600, 200);
+       context1.stroke();
+       context1.beginPath();
+       context1.moveTo(700, 100);
+       context1.lineTo(700, 200);
+       context1.strokeStyle='green';
+       context1.stroke();
+       context1.strokeStyle='black';
+       context1.beginPath();
+       context1.arc(500, 200, 50, 0, Math.PI / 2, true);
+       context1.stroke();
        context1.fillStyle="yellow";
        context1.fillRect(140, 20, 150, 100);
+       context2.rect(20, 20, 100, 100);
+       context2.stroke();
+       context1.beginPath();
+       context1.fillStyle="red";
+       context1.arc(100, 75, 50, 0, 2 * Math.PI);
+       context1.fill();
+       context1.font='40px sansserif' /*font size, family, */
+       context1.fillText("Hello Neo",400,80);
+       context1.font='bold 40px Arial' /*weight, font size, family*/
+       context1.fillStyle="blue";
+       context1.fillText("Hello Neo",600,80);
     </script>
     </script>
 </body>
