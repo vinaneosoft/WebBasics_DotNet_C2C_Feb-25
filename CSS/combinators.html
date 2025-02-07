@@ -34,7 +34,16 @@
         #sibling~p{
             font-weight: bold;
         }
-        /*/*select next element after */
+        /*select next element after #sibling2*/
+        #sibling2+*{
+            font-style: italic;
+        }
+         /*select all elements after #sibling2*/
+         #sibling2~*{
+            text-align: center;
+        }
+
+
    </style>
 </head>
 <body>
