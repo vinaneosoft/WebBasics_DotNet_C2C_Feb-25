@@ -5,16 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Combinators</title>
     <style>
-        /*select all paragraph descendant of section : ' ' (space)*/
+        /*select all paragraph descendant of section1 : ' ' (space)*/
         /*id selector element selector*/
         #section1 p{
             background-color: aliceblue;
         }
-         /*select all direct paragraph childs of section : '>' */
+         /*select all direct paragraph childs of section1 : '>' */
          #section1 > p{
            color: darkred;
         }
-    </style>
+        /*select all childs of 2nd section having id section2*/
+        #section2{
+
+        }
+        /*select direct childs having class india of 2nd section having id section2*/
+        #section2>.india{
+
+        }
+        /*select direct paragraph childs having class india of 2nd section having id section2*/
+   
+        sibling relation 
+   </style>
 </head>
 <body>
     <section id="section1">
@@ -40,13 +51,22 @@
     Expedita iure quia deleniti quis laboriosam porro!
 </p>
 <hr>
-<section>
+<section id="section2">
+    <h3 class="india">Heading</h3>
+    <p class="india">
+        1. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique dignissimos quae sequi hic recusandae ipsam asperiores rem, numquam distinctio? Atque tempore dicta 
+        architecto rerum temporibus explicabo nesciunt doloribus reiciendis ipsa.
+    </p>
+    <p class="india">
+        1. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique dignissimos quae sequi hic recusandae ipsam asperiores rem, numquam distinctio? Atque tempore dicta 
+        architecto rerum temporibus explicabo nesciunt doloribus reiciendis ipsa.
+    </p>
     <p>
         1. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique dignissimos quae sequi hic recusandae ipsam asperiores rem, numquam distinctio? Atque tempore dicta 
         architecto rerum temporibus explicabo nesciunt doloribus reiciendis ipsa.
     </p>
     <footer>
-        <p>2. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex quam magnam ea? Dolorum temporibus beatae qui eligendi quae obcaecati doloribus commodi 
+        <p class="india">2. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex quam magnam ea? Dolorum temporibus beatae qui eligendi quae obcaecati doloribus commodi 
             dignissimos eaque. Fuga error sed voluptatibus quidem quae in!</p>
     </footer>
 </section>
