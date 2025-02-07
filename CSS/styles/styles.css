@@ -1,4 +1,11 @@
-/*selector*/
+/*external css*/
 h2{
     text-decoration: underline;
+}
+h1{
+    text-transform: uppercase;
+    text-align: center;
+}
+#mainheading{
+    text-align: left;
 }
