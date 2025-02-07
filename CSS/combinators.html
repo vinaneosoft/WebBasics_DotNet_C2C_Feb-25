@@ -23,8 +23,18 @@
 
         }
         /*select direct paragraph childs having class india of 2nd section having id section2*/
-   
-        sibling relation 
+        #section2>p.india{
+
+        }
+        /*select next paragraph after #sibling*/
+        #sibling+p{
+            text-transform: uppercase;
+        }
+        /*select all paragraphs after #sibling*/
+        #sibling~p{
+            font-weight: bold;
+        }
+        /*/*select next element after */
    </style>
 </head>
 <body>
@@ -38,16 +48,20 @@
             architecto rerum temporibus explicabo nesciunt doloribus reiciendis ipsa.
         </p>
         <footer>
-            <div>
+            <p> prev. Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                Mollitia harum quia libero at. Quisquam vel minus ducimus, quaerat quasi veniam inventore omnis molestias voluptates accusamus animi consectetur repellendus, fugiat nihil.</p>
+            <div id="sibling">
                 div Lorem ipsum, dolor sit amet consectetur adipisicing elit. Modi nulla libero minus qui molestiae delectus beatae error cum, sint odio rem exercitationem
                  dolorum fuga repellat architecto id blanditiis fugit deleniti!
             </div>
-            <p>3. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex quam magnam ea? Dolorum temporibus beatae qui eligendi quae obcaecati doloribus commodi 
+            <p>3. 1st next. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex quam magnam ea? Dolorum temporibus beatae qui eligendi quae obcaecati doloribus commodi 
                 dignissimos eaque. Fuga error sed voluptatibus quidem quae in!</p>
+            <p>4. 2nd next. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex quam magnam ea? Dolorum temporibus beatae qui eligendi quae obcaecati doloribus commodi 
+                    dignissimos eaque. Fuga error sed voluptatibus quidem quae in!</p>
         </footer>
     </section>
     <hr>
-<p> 4. Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae quibusdam, alias, quod commodi iste ipsam adipisci, obcaecati perferendis ipsa voluptate quas earum magni. 
+<p> 5. Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae quibusdam, alias, quod commodi iste ipsam adipisci, obcaecati perferendis ipsa voluptate quas earum magni. 
     Expedita iure quia deleniti quis laboriosam porro!
 </p>
 <hr>
@@ -66,8 +80,22 @@
         architecto rerum temporibus explicabo nesciunt doloribus reiciendis ipsa.
     </p>
     <footer>
-        <p class="india">2. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex quam magnam ea? Dolorum temporibus beatae qui eligendi quae obcaecati doloribus commodi 
+        <p> prev. Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+            Mollitia harum quia libero at. Quisquam vel minus ducimus, quaerat quasi veniam inventore omnis molestias voluptates accusamus animi consectetur repellendus, fugiat nihil.</p>
+        <div id="sibling2">
+            div Lorem ipsum, dolor sit amet consectetur adipisicing elit. Modi nulla libero minus qui molestiae delectus beatae error cum, sint odio rem exercitationem
+             dolorum fuga repellat architecto id blanditiis fugit deleniti!
+        </div>
+        <article>
+            article
+        </article>
+        <p>3. 1st next. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex quam magnam ea? Dolorum temporibus beatae qui eligendi quae obcaecati doloribus commodi 
             dignissimos eaque. Fuga error sed voluptatibus quidem quae in!</p>
+        <p>4. 2nd next. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex quam magnam ea? Dolorum temporibus beatae qui eligendi quae obcaecati doloribus commodi 
+                dignissimos eaque. Fuga error sed voluptatibus quidem quae in!</p>
+        <figure>
+            <figcaption>hi</figcaption>
+        </figure>
     </footer>
 </section>
 </body>
