@@ -40,3 +40,24 @@ input[type='email']{
 /*precedence,
 !important*/
 
+/*attribute selector  and class selector have same precedence if
+[attribute],[attribute=value] .  */
+
+/*attribute selector has more precedence than class selector if
+ele[], . */
+
+/* [attribute], [attribute and value ] both have same precedence*/
+.messages{
+    background-color: lightgreen ;
+} 
+
+[type='A']{
+    background-color: lightblue;
+}
+
+[type]{
+    background-color: lightpink;
+}
+
+
+
