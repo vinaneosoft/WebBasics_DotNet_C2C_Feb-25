@@ -1,18 +1,26 @@
-/*give darkmagenta color to all paragraphs of web application*/
 
+/*give darkmagenta color to all paragraphs of web application*/
+/*give textdecoation underline to all p */
 /*ele sel*/
+/*1st and last paragraph of contact page should have background color*/
 p{
     color: darkmagenta;
+    text-decoration: underline !important;
 }
 /*make 1st paragraph all letter capital on all web pages */
+/*give  textdecoation overline to 1st paragraph*/
 .first{
     text-transform: uppercase;
+    text-decoration: overline;
 }
+
 /*1st paragraph of contact page should have border*/
+/*give  textdecoation throughline to 1st paragraph on contact page*/
 #firstoncontact{
     border: 2px solid;
+    text-decoration: line-through;
 }
-/*1st and last paragraph of contact page should have background color*/
+
 .bgcol{
     background-color: rgb(239, 239, 92);
 }
@@ -29,4 +37,6 @@ input[type='email']{
     width: 200px;
     height: 30px;
 }
+/*precedence,
+!important*/
 
