@@ -1,8 +1,7 @@
-const anodes=document.getElementsByTagName('a'); // collection
-
-function addActive(){
-for(let anode of anodes){
-    anode.classList.remove('activeLink');
+const navlinks=document.getElementsByTagName("a");
+const currentURL=window.location.href;
+for(let link of navlinks){
+    if(link.href==currentURL){
+        link.classList.add('activeLink')
+    }
 }
-event.target.classList.add('activeLink');
-} 
