@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #para1{
+            background-image: url(./resources/images/sunsetmarine.jpg);
+            background-size: cover;
+        }
+        div{
+            border: 2px solid;
+        }
+        #div1{
+            height: 100px;
+            width: 100px;
+        }
+        #div1>img{
+            height: 100%; /*100% of parent height*/
+            width: 100%; /*100% of parent width*/
+        }
+        #div2{
+            height: 100px;
+            width: 100px;
+            overflow: hidden;
+        }
+        #div3>img:first-child{
+          height: 300px;
+          width: 300px;
+          object-fit: cover;
+        }
+        #div3>img:nth-child(2){
+            height: 300px;
+            width: 300px;
+          /* object-fit: fill;*/ 
+        }
+        #div3>img:nth-child(3){
+            height: 300px;
+            width: 300px;
+          object-fit: none;
+        }
+    </style>
+</head>
+<body>
+    <p id="para1">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum magni veniam, similique molestias delectus temporibus blanditiis praesentium pariatur doloremque sit. 
+        Nam modi, vel animi impedit a voluptates eos ducimus neque.
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum magni veniam, similique molestias delectus temporibus blanditiis praesentium pariatur doloremque sit. 
+        Nam modi, vel animi impedit a voluptates eos ducimus neque.
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum magni veniam, similique molestias delectus temporibus blanditiis praesentium pariatur doloremque sit. 
+        Nam modi, vel animi impedit a voluptates eos ducimus neque.
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum magni veniam, similique molestias delectus temporibus blanditiis praesentium pariatur doloremque sit. 
+        Nam modi, vel animi impedit a voluptates eos ducimus neque.
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum magni veniam, similique molestias delectus temporibus blanditiis praesentium pariatur doloremque sit. 
+        Nam modi, vel animi impedit a voluptates eos ducimus neque.
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum magni veniam, similique molestias delectus temporibus blanditiis praesentium pariatur doloremque sit. 
+        Nam modi, vel animi impedit a voluptates eos ducimus neque.
+    </p>
+    <div id="div1">
+        <img src="./resources/images/water.jpg" alt="water">
+    </div>
+    <div id="div2">
+        <img src="./resources/images/water.jpg" alt="water">
+    </div>
+    <div id="div3">
+        <img src="./resources/images/water.jpg" alt="water">
+        <img src="./resources/images/water.jpg" alt="water">
+        <img src="./resources/images/water.jpg" alt="water">
+        <img src="./resources/images/water.jpg" alt="water">
+    </div>
+</body>
+</html>
