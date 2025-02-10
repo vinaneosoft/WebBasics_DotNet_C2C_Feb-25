@@ -5,13 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pseudo Elements</title>
     <style>
+        /*selector::first-line*/
+        p{
+            color: yellow;
+        }
         p::first-line{
             color: red;
         }
         pre::first-line{
             color: blue;
         }
-        #firstletter, pre::first-letter{
+        #firstletter, #india::first-letter{
             font-style: italic;
             font-size: 30px;
             font-weight: bold;
@@ -26,6 +30,14 @@
             font-weight: bold;
             color: darkgoldenrod;
         }
+        body>:not(p){
+            background: pink;
+        }
+        /*The :not() pseudo-class requires a selector list, a comma-separated list of one or more selectors,
+         as its argument. The list must not contain a pseudo-element, 
+        but any other simple, compound, and complex selectors are allowed.*/
+    
+        /*in paragraph except first line, style all rest lines in different color*/
     </style>
 </head>
 <body>
@@ -39,7 +51,7 @@
     <p>
        <span id="firstletter">I</span>ndia is my country. <br> All indians are my brothers and sisters
     </p>
-    <pre>
+    <pre id="india">
         India is my country. 
         All indians are my brothers and sisters
     </pre>
@@ -69,17 +81,9 @@
              Veritatis libero deleniti non sunt aperiam sed
              tenetur voluptate perferendis architecto 
              distinctio ipsa enim, facilis id reprehenderit modi mollitia possimus alias illum.
-
-             
-             
-
-             
-
-             
-
-             
-             
-
     </p>
+    <div>
+        hi
+    </div>
 </body>
 </html>
