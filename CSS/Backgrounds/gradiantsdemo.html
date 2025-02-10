@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gradiants</title>
+    <style>
+        .block{
+            border: 2px dashed;
+        }
+        #block1{
+            background-image: linear-gradient(red,yellow, pink, green); /*to bottom*/
+            /*to right, to left, to top, to top left, to bottom right, 45deg, 30deg, -67deg*/
+            background-image: linear-gradient(-50deg, red,yellow, pink, green);
+        }
+        #block2{
+            height: 600px;
+            background-image: radial-gradient(red,yellow, pink, green); /*ellipse*/
+            background-image: radial-gradient(circle, red,yellow, pink, green); 
+        }
+        #block3{
+            background-image: repeating-linear-gradient(red ,blue , yellow 20%); /*100/20*/
+        }
+    </style>
+</head>
+<body>
+    <section class="block" id="block1">
+        <p>
+         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolores eius fuga modi fugiat quis amet ullam! Accusamus voluptatum blanditiis alias, inventore similique 
+         id recusandae accusantium, culpa dignissimos esse, officia labore?
+        </p>
+        <p>
+         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolores eius fuga modi fugiat quis amet ullam! Accusamus voluptatum blanditiis alias, inventore similique 
+         id recusandae accusantium, culpa dignissimos esse, officia labore?
+        </p>
+        <p>
+         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolores eius fuga modi fugiat quis amet ullam! Accusamus voluptatum blanditiis alias, inventore similique 
+         id recusandae accusantium, culpa dignissimos esse, officia labore?
+        </p>
+     </section>
+     <section class="block" id="block2">
+         <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolores eius fuga modi fugiat quis amet ullam! Accusamus voluptatum blanditiis alias, inventore similique 
+          id recusandae accusantium, culpa dignissimos esse, officia labore?
+         </p>
+         <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolores eius fuga modi fugiat quis amet ullam! Accusamus voluptatum blanditiis alias, inventore similique 
+          id recusandae accusantium, culpa dignissimos esse, officia labore?
+         </p>
+         <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolores eius fuga modi fugiat quis amet ullam! Accusamus voluptatum blanditiis alias, inventore similique 
+          id recusandae accusantium, culpa dignissimos esse, officia labore?
+         </p>
+      </section>
+      <section class="block" id="block3">
+        <p>
+         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolores eius fuga modi fugiat quis amet ullam! Accusamus voluptatum blanditiis alias, inventore similique 
+         id recusandae accusantium, culpa dignissimos esse, officia labore?
+        </p>
+        <p>
+         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolores eius fuga modi fugiat quis amet ullam! Accusamus voluptatum blanditiis alias, inventore similique 
+         id recusandae accusantium, culpa dignissimos esse, officia labore?
+        </p>
+        <p>
+         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolores eius fuga modi fugiat quis amet ullam! Accusamus voluptatum blanditiis alias, inventore similique 
+         id recusandae accusantium, culpa dignissimos esse, officia labore?
+        </p>
+     </section>
+</body>
+</html>
