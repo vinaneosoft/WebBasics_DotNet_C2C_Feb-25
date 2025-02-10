@@ -1,7 +1,7 @@
-const navlinks=document.getElementsByTagName("a");
+const anchorelements=document.getElementsByTagName("a");
 const currentURL=window.location.href;
-for(let link of navlinks){
-    if(link.href==currentURL){
-        link.classList.add('activeLink')
+for(let a of anchorelements){
+    if(a.href==currentURL){
+        a.classList.add('activeLink')
     }
 }
