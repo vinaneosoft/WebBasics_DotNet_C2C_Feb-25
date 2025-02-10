@@ -61,3 +61,32 @@ ele[], . */
 
 
 
+.topnavbar{
+    background-color: black;
+}
+.topnavbar li{
+    display: inline-block;
+    padding: 15px;
+}
+.topnavbar a{
+    color: white;
+    text-decoration: none;
+}
+.topnavbar a:link{
+    color: cadetblue;
+}
+.topnavbar a:visited{
+    color: green;
+}
+.topnavbar a:hover{
+    background-color: aqua;
+}
+/*when u click on the link*/
+.topnavbar a:active{
+    background-color: hotpink;
+}
+
+.activeLink{
+    background-color: chocolate;
+    font-size: 20px;
+}
