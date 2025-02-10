@@ -13,13 +13,23 @@
         }
         /*state of element*/
         /*pseudo class : hover, */
-        table:hover{
+        .studmarks:hover{
             background-color: yellow;
         }
-    </style> 
+        /*select 1st tr of below tables*/
+        /*below selection not selecting parent, parent can be anything*/
+        tr:first-child{
+            background-color: aqua;
+        }
+        /*below selection is also selecting parent and tr as 1st child of that parent*/
+        /*1st tr of thead */
+        thead>tr:first-child{
+            background-color: blueviolet;
+        }
+    </style>
 </head>
 <body>
-     <table class="studmarks">
+     <table class="studmarks" id="table1">
         <caption>STUDENTS MARKS</caption>
         <thead>
             <tr><th>STUDENT ID</th><th>PHY</th> <th>CHEM</th> <th>MATHS</th></tr>
@@ -34,7 +44,7 @@
             <tr><th>Average</th><td>80</td><td>72</td><td>85</td></tr>
         </tfoot>
     </table> 
-    <table class="studmarks">
+    <table class="studmarks" id="table2">
         <caption>STUDENTS MARKS</caption>
         <thead>
             <tr><th>STUDENT ID</th><th>PHY</th> <th>CHEM</th> <th>MATHS</th></tr>
