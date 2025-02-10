@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tables</title>
+   <style>
+        /*2 table have common class*/
+        .studmarks,  .studmarks td,  .studmarks th{
+            border: 1px solid pink;
+            border-collapse: collapse;
+            padding: 10px;
+        }
+        /*state of element*/
+        /*pseudo class : hover, */
+        table:hover{
+            background-color: yellow;
+        }
+    </style> 
+</head>
+<body>
+     <table class="studmarks">
+        <caption>STUDENTS MARKS</caption>
+        <thead>
+            <tr><th>STUDENT ID</th><th>PHY</th> <th>CHEM</th> <th>MATHS</th></tr>
+        </thead>
+        <tbody>
+            <tr><th>101</th><td>78</td><td>89</td><td>90</td></tr>
+            <tr><th>102</th><td>89</td><td>66</td><td>88</td></tr>
+            <tr><th>103</th><td>90</td><td>90</td><td>98</td></tr>
+            <tr><th>104</th><td>76</td><td>77</td><td>79</td></tr>
+        </tbody>
+        <tfoot>
+            <tr><th>Average</th><td>80</td><td>72</td><td>85</td></tr>
+        </tfoot>
+    </table> 
+    <table class="studmarks">
+        <caption>STUDENTS MARKS</caption>
+        <thead>
+            <tr><th>STUDENT ID</th><th>PHY</th> <th>CHEM</th> <th>MATHS</th></tr>
+        </thead>
+        <tbody>
+            <tr><th>101</th><td>78</td><td>89</td><td>90</td></tr>
+            <tr><th>102</th><td>89</td><td>66</td><td>88</td></tr>
+            <tr><th>103</th><td>90</td><td>90</td><td>98</td></tr>
+            <tr><th>104</th><td>76</td><td>77</td><td>79</td></tr>
+        </tbody>
+        <tfoot>
+            <tr><th>Average</th><td>80</td><td>72</td><td>85</td></tr>
+        </tfoot>
+    </table> 
+</body>
+</html>
