@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Elements</title>
+    <style>
+        p::first-line{
+            color: red;
+        }
+        pre::first-line{
+            color: blue;
+        }
+        #firstletter, pre::first-letter{
+            font-style: italic;
+            font-size: 30px;
+            font-weight: bold;
+            color: darkgreen;
+        }
+        #newsarticle{
+            columns: 3;
+        }
+        #newsarticle::first-letter{
+            font-style: italic;
+            font-size: 30px;
+            font-weight: bold;
+            color: darkgoldenrod;
+        }
+    </style>
+</head>
+<body>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Nulla, cum numquam animi sequi accusamus distinctio unde quidem incidunt eligendi enim, 
+         repellat ipsam dolores et officiis laborum. Ad amet fuga repellendus!
+    </p>
+
+    <p>
+       <span id="firstletter">I</span>ndia is my country. <br> All indians are my brothers and sisters
+    </p>
+    <pre>
+        India is my country. 
+        All indians are my brothers and sisters
+    </pre>
+
+    <p id="newsarticle">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+        Veritatis libero deleniti non sunt aperiam sed
+         tenetur voluptate perferendis architecto 
+         distinctio ipsa enim, facilis id reprehenderit modi mollitia possimus alias illum.
+
+         Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+         Veritatis libero deleniti non sunt aperiam sed
+          tenetur voluptate perferendis architecto 
+          distinctio ipsa enim, facilis id reprehenderit modi mollitia possimus alias illum.
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+          Veritatis libero deleniti non sunt aperiam sed
+           tenetur voluptate perferendis architecto 
+           distinctio ipsa enim, facilis id reprehenderit modi mollitia possimus alias illum.
+           Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+           Veritatis libero deleniti non sunt aperiam sed
+            tenetur voluptate perferendis architecto 
+            distinctio ipsa enim, facilis id reprehenderit modi mollitia possimus alias illum.
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+            Veritatis libero deleniti non sunt aperiam sed
+             tenetur voluptate perferendis architecto 
+             distinctio ipsa enim, facilis id reprehenderit modi mollitia possimus alias illum.
+             Veritatis libero deleniti non sunt aperiam sed
+             tenetur voluptate perferendis architecto 
+             distinctio ipsa enim, facilis id reprehenderit modi mollitia possimus alias illum.
+
+             
+             
+
+             
+
+             
+
+             
+             
+
+    </p>
+</body>
+</html>
