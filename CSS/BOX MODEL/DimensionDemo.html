@@ -15,17 +15,23 @@
         }
         header{
             border: 3px solid pink;
-            width: 10in; /*explicit width*/
+            width: 10in; /*explicit width*/ /*px, cm, in, m*/
+            height: 500px; /*fix height*/
         }
         h1, p{
             border: 2px solid blue;
             word-wrap: break-word; /*when no space*/
+        
+        }
+        p{
+            height: 50%; /*when we have explicit height to parent then only % will work*/
         }
         b{
             border: 1px solid darkcyan;
         }
         h1{
             width: 50%; /* n% of parent*/
+            height: 3cm;
         }
        
     </style>
@@ -35,6 +41,8 @@
         <header>
             <h1>DIMENSION DEMO</h1>
             <p>
+                Lorem ipsum dolor sit amet, <b>consectetur adipisicing elit</b>. Quidem, minus! Iste dolorum optio consectetur magni alias officia eligendi vel facilis, voluptatibus 
+                ducimus aperiam velit! Odit quod accusantium maxime deserunt explicabo!
                 Lorem ipsum dolor sit amet, <b>consectetur adipisicing elit</b>. Quidem, minus! Iste dolorum optio consectetur magni alias officia eligendi vel facilis, voluptatibus 
                 ducimus aperiam velit! Odit quod accusantium maxime deserunt explicabo!
             </p>
