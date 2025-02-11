@@ -10,6 +10,24 @@
             height: 100px;
             width: 100px;
         }
+        #block1{
+            position:absolute; 
+            z-index: -2; 
+            background: darkgrey;
+        }
+        #block2{
+            background: darkgreen;
+             position:absolute; 
+             z-index: -1;
+        }
+        #block3{
+            background: darkcyan;
+            transition: 1s;
+        }
+        #block3:hover{
+            transform: translate(400px);
+        }
+        
     </style>
 </head>
 <body>
@@ -21,6 +39,9 @@
     </div>
     <div class="block" id="block3">
         div3
+    </div>
+    <div id="block4">
+        india
     </div>
 </body>
 </html>
