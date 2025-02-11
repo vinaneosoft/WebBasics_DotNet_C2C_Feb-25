@@ -5,27 +5,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        ol{
+        #ol1{
             list-style-type: circle;
             list-style-image: linear-gradient(red, pink, purple);
             list-style-image: radial-gradient(red, pink, purple);
             /*small icons*/
-            list-style-image:url(https://img.icons8.com/ios-glyphs/5/flower.png)
+            list-style-image:url(https://img.icons8.com/doodle/30/flower--v1.png);
+        }
+        #ol2>li::marker{
+          color: green;
         }
     </style>
 </head>
 <body>
-    <ol>
+    <ol id="ol1">
         <li>Tea</li>
         <li>Coffee</li>
         <li>Green tea</li>
         <li>Lemon tea</li>
     </ol>
-    <ol>
+    <ol id="ol2">
         <li>Tea</li>
         <li>Coffee</li>
         <li>Green tea</li>
         <li>Lemon tea</li>
     </ol>
+    <ul>
+        <li>Tea</li>
+        <li>Coffee</li>
+        <li>Green tea</li>
+        <li>Lemon tea</li>
+    </ul>
 </body>
 </html>
