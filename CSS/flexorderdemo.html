@@ -14,23 +14,35 @@
             background: rgb(238, 238, 238);
             border : 1px solid ;
             display: flex;
-            flex-direction: row-reverse;  /*default*/
-            flex-wrap: wrap;  /*no-wrap (default), wrap, wrap-reverse*/
-            justify-content:center; /*left, right : global, flex-start, flex-end*/
-            /* align-content: center; */ /*stretch*/
-             align-items: start; /*align-items: center row wise veritical alignment*/
+            flex-direction: row;  /*default*/
+           /*  flex-wrap: wrap;
+            justify-content: center;
+            align-content: center; */
         }
+        /*order : 0 default*/
+        #second{
+            order:6;
+        } 
         #first{
-            align-self: flex-end; /*align self is overriding align-items alignment*/
+           order:4;
+        }     
+        #third{
+            order:1;
         }
         #fourth{
-            align-self: flex-end;
+            order: 2;
         }
-      
+        #fifth{
+            order: 3;
+        }
+        #sixth{
+            order: 5;
+        }
     </style>
 </head>
 <body>
     <div id="locationsflex">
+      
         <div id="first">
            <h2> Dadar, Mumbai (Headquarters) 1</h2>
             <p>The Ruby Tower, Senapati Bapat Marg, Dadar West, Mumbai, Maharashtra 400028</p>
@@ -39,9 +51,8 @@
             <h2> Dadar, Mumbai (Headquarters) 2</h2>
              <p>The Ruby Tower, Senapati Bapat Marg, Dadar West, Mumbai, Maharashtra 400028</p>
              <p>The Ruby Tower, Senapati Bapat Marg, Dadar West, Mumbai, Maharashtra 400028</p>
-        
-            </div>
-         <div>
+        </div>
+         <div id="third">
             <h2> Dadar, Mumbai (Headquarters) 3</h2>
              <p>The Ruby Tower, Senapati Bapat Marg, Dadar West, Mumbai, Maharashtra 400028</p>
          </div>
@@ -49,7 +60,7 @@
             <h2> Dadar, Mumbai (Headquarters) 4</h2>
              <p>The Ruby Tower, Senapati Bapat Marg, Dadar West, Mumbai, Maharashtra 400028</p>
          </div>
-         <div>
+         <div id="fifth">
             <h2> Dadar, Mumbai (Headquarters) 5</h2>
              <p>The Ruby Tower, Senapati Bapat Marg, Dadar West, Mumbai, Maharashtra 400028</p>
          </div>
