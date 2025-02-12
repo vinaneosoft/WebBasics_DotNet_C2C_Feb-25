@@ -11,6 +11,7 @@
             border: 4px double green;
             background: linear-gradient(pink, purple, yellow);
             transition: 1s;
+            margin-left: 100px;
         }
         #block1:hover{
             transform: translateX(500px);
@@ -23,6 +24,23 @@
             transform: rotate(-45deg);/*anticlockwise*/
             transform: rotate(360deg);
             transform: rotate(6.28rad); /*radian angle*/
+            transform: rotateX(80deg);
+            transform: rotateY(80deg);
+        }
+        #block3:hover{
+            transform: scale(3); /*number * orignal dimension */
+            transform: scale(2, 4);
+        }
+        #scaledemo{
+            transition: 0.5s;
+        }
+        figure{
+            border:10px solid;
+            overflow: hidden;
+            display: inline-block;
+        }
+        #scaledemo:hover{
+            transform: scale(2);
         }
     </style>
 </head>
@@ -33,5 +51,12 @@
     <section class="block" id="block2">
         India is my country
     </section>
+    <section class="block" id="block3">
+        India is my country
+        
+    </section>
+    <figure>
+        <img id="scaledemo" src="./resources/images/sunsetmarine.jpg" alt="sunset" height="100" width="100">
+    </figure>
 </body>
 </html>
