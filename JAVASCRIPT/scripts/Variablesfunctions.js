@@ -53,10 +53,36 @@ console.log("-------------------------");
 
 //let type variables have block scope, in which block they are declared
 function loop2(){
-  /*   console.log(i);  */    /* error : not defined */
-        for(let i=1;i<=5;i++){
-            console.log(i);
-        }// for end i scope end
-      /*   console.log("after:"+i); */  /* error : not defined */
-    }
-    loop2();
+    /*   console.log(i);  */    /* error : not defined */
+    for(let i=1;i<=5;i++){
+        console.log(i);
+    }// for end i scope end
+    /*   console.log("after:"+i); */  /* error : not defined */
+}
+loop2();
+
+console.log("------------------");
+
+/* function without names */
+
+const addfun=function(num1,num2){
+    document.write(num1);
+    document.write("<br>"+num2); 
+    document.write("<p>"+num1+"</p>");
+    document.write("<p>"+num2+"</p>"); 
+    return num1+num2;
+}
+const result=addfun(45,67);
+console.log(result);
+
+/* arrow function */
+
+const arrowfun=(num1,num2)=>{
+    document.write(num1);
+    document.write("<br>"+num2); 
+    document.write("<p>"+num1+"</p>");
+    document.write("<p>"+num2+"</p>"); 
+    return num1+num2;
+}
+const res=arrowfun(67,88);
+document.write(res);
