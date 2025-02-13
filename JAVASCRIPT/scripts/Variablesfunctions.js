@@ -86,3 +86,26 @@ const arrowfun=(num1,num2)=>{
 }
 const res=arrowfun(67,88);
 document.write(res);
+
+const subfun1=(num1,num2)=>{
+    console.log(num1-num2) 
+}
+subfun1(56,23);
+/* if arrow funciton body has single statement then {} are optional*/
+const subfun2=(num1,num2)=>console.log(num1-num2) 
+subfun2(56,23);
+
+/* if arrow funciton body has single return statement then {} are optional, return keyword not allowed
+it implicitly returns the result*/
+const subfun3=(num1,num2)=> num1-num2; 
+
+console.log(subfun3(56,23));
+
+/* if arrow function has single format argument then () are optional */
+const cubeFun=num=>num*num*num;
+const cuberes=cubeFun(6);
+console.log(cuberes);
+
+
+
+
