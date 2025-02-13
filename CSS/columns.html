@@ -12,22 +12,23 @@
             column-rule-style: solid;
             column-rule-color: green;
             column-rule-width: 10px;
-
             column-rule: blue dashed 5px;
-
             columns: 4;
         }
         #newspaperarticle2{
-            /*if column-width to give then dont use column-count*/
-            column-width: 100px;
+            /*if using column-width as we all column-count then which making
+            less column count is that is considered */
+
             column-gap: 50px;
             column-rule: blue dashed 5px;
 
+            column-width: 300px; /*3*/
+            column-count: 5;   /*3<5*/
             columns: 300px; /*width*/
             columns:  5; /*count*/
-
-            columns: 300px auto;
             columns: 5 auto;
+            columns: 300px auto;
+            columns: 200px 2; /*5 2   2<5*/
         }
     </style>
 </head>
