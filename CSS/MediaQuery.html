@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Navbar</title>
+    <style>
+        .topnavbar{
+            background: black;
+        }
+        .topnavbar>ol{
+            display: flex;
+            justify-content: space-around;
+            padding: 10px;
+            list-style-type: none;
+        }
+        .topnavbar a{
+            color: white;
+            text-decoration: none;
+        }
+        .topnavbar li{
+            margin: 5px;
+        }
+
+        @media screen and (max-width: 768px) {
+            /*stacked navbar*/
+           .topnavbar>ol{
+            flex-direction: column;
+           
+           }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="topnavbar">
+            <ol>
+                <li><a href="#">LINK</a></li>
+                <li><a href="#">LINK</a></li>
+                <li><a href="#">LINK</a></li>
+                <li><a href="#">LINK</a></li>
+            </ol>
+        </nav>
+    </header>
+</body>
+</html>
