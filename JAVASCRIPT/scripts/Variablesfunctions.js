@@ -30,9 +30,25 @@ let city="Dadar";
 //let city="Rabale";
 city="Rabale";
 
-function add(){
-    var num1;
-    let num2;
+//var type variables have functional scope, if function anywhere they are declared
+function loop(){
+    console.log(i);
+    
+   for(var i=1;i<=5;i++){
+    console.log(i);
+   }// for end
+   console.log("after:"+i);
 
- 
-}
+   function test(){
+    var year=2025;
+    console.log(year);
+    console.log(i); // 
+    
+   } // year scope ends
+   test();
+   /* console.log(year);  */// error
+   
+   
+}// i scope ends
+
+loop();
