@@ -30,7 +30,7 @@ let city="Dadar";
 //let city="Rabale";
 city="Rabale";
 
-//var type variables have functional scope, if function anywhere they are declared
+//var type variables have functional scope, if in function anywhere they are declared
 function loop(){
 console.log(i);    
     for(var i=1;i<=5;i++){
@@ -46,3 +46,17 @@ console.log(i);
    /* console.log(year);  */// error
 }// i scope ends
 loop();
+
+console.log("-------------------------");
+
+
+
+//let type variables have block scope, in which block they are declared
+function loop2(){
+  /*   console.log(i);  */    /* error : not defined */
+        for(let i=1;i<=5;i++){
+            console.log(i);
+        }// for end i scope end
+      /*   console.log("after:"+i); */  /* error : not defined */
+    }
+    loop2();
