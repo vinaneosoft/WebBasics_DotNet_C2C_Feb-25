@@ -7,17 +7,18 @@
     <style>
         #gridcontainer{
             width: 600px;
+            height: 500px;
             border:5px solid;
             display: grid;
-            grid-template-columns: [cl1] auto [cl2] auto [cl3] auto [cl4] auto [cl5]; /*custom names to grid column lines*/
-            grid-template-rows: [rl1] auto [rl2] auto [rl3] auto [rl4];  /*custom names to grid row lines*/
+            grid-template-columns: [cl1] 100px [cl2] auto [cl3] 30% [cl4] auto [cl5]; /*custom names to grid column lines*/
+            grid-template-rows: [firstrowline] auto [rl2] 200px [rl3] auto [rl4] ;  /*custom names to grid row lines*/
         }
         .griditem{
             border : 2px solid green;
         }
       
         #item3{
-           grid-row-start: rl1; /*use of custom names */
+           grid-row-start: firstrowline; /*use of custom names */
            grid-row-end: rl3;
            grid-column-start: cl4;
         }
