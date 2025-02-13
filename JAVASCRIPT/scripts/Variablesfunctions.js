@@ -107,5 +107,24 @@ const cuberes=cubeFun(6);
 console.log(cuberes);
 
 
+let arr=[67,89,56,45,89,45];
+/*normal for loop */
 
+for(let I=0; I<=arr.length-1; I++){
+    console.log(arr[I]);
+}
+console.log("-------------------");
 
+/* for of loop */
+for (let arrvalue of arr){
+    console.log(arrvalue);
+}
+console.log("-------------------");
+/* forEach */
+arr.forEach((vl)=>console.log(vl));
+
+/* <60*/
+const filterarr=arr.filter((val)=>val<60);
+console.log(filterarr);
+/* function chaining */
+arr.filter((val)=>val<60).forEach((filtval)=>console.log(filtval))
