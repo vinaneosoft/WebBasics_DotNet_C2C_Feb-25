@@ -9,23 +9,22 @@
             width: 600px;
             border:5px solid;
             display: grid;
-            grid-template-columns: auto auto auto;
-            grid-template-columns:  100px  50% auto auto; /*100px from 600px, 50% of 600px, auto : remaining */
-            /* gap: 10px 20px; */
+            grid-template-columns: [cl1] auto [cl2] auto [cl3] auto [cl4] auto [cl5]; /*custom names to grid column lines*/
+            grid-template-rows: [rl1] auto [rl2] auto [rl3] auto [rl4];  /*custom names to grid row lines*/
         }
         .griditem{
             border : 2px solid green;
         }
       
         #item3{
-           grid-row-start: 1;
-           grid-row-end: 3;
-           grid-column-start: 4;
+           grid-row-start: rl1; /*use of custom names */
+           grid-row-end: rl3;
+           grid-column-start: cl4;
         }
         #item9{
-            grid-column-start: 3;
-            grid-column-end: 5;
-        }
+            grid-column-start: cl3;
+            grid-column-end: cl5;
+        } 
     </style>
 </head>
 <body>
