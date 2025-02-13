@@ -24,6 +24,9 @@
          #footer{
             grid-area: footer;
          }
+         #subsection{
+            grid-area: subsection;
+         }
          #gridcontainer{
             border:5px solid;
             display: grid;
@@ -31,6 +34,7 @@
             grid-template-areas: 
             'header header header header header'
             'leftnavbar mainsection mainsection mainsection advertisesection'
+            'leftnavbar subsection subsection subsection subsection'
             'footer footer footer footer footer';
          }
          #topnavbar li{
@@ -87,6 +91,7 @@
         </div>
         <main class="griditem" id="main">MAIN</main>
         <div class="griditem" id="advertisement"> ADVERTISE</div>
+        <div class="griditem" id="subsection"> SUBSECTION</div>
         <footer  class="griditem" id="footer">FOOTER</footer>
     </div>
 </body>
