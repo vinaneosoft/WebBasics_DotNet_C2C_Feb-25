@@ -133,7 +133,7 @@ arr
 console.log(arr);
 
 
-const names=['Kiran','Amol', 'Kavita','aman','Savita','Amant'];
+let names=['Kiran','Amol', 'Kavita','aman','Savita','Amant'];
 /* 
 show names starting with 'A' /'a'  : startsWith */
 
@@ -183,3 +183,11 @@ const sum1=arr1.reduce((acc, val)=>acc+val);
 const sum2=arr2.reduce((acc,val)=>acc+val,sum1)
 console.log("Addition od arr1 and arr2: "+sum2);
 
+
+names=['Kiran','amol', 'Kavita','aman','Savita','Amant', 'Zinat', 'Zahar'];
+/* contact first letter of every name from array */
+
+const concatstring=names.map((name)=>name.charAt(0).toUpperCase()).reduce((acc,letter)=> acc+letter);
+console.log(concatstring);
+
+names.filter((name)=>name.toUpperCase().startsWith('A') || name.toUpperCase().startsWith('Z')).forEach((name)=>console.log(name))
