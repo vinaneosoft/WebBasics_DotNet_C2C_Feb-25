@@ -14,15 +14,12 @@
         <input id="mname" type="text" title="middle name" class="empname" name="empname"> 
         <input id="lname" type="text"  placeholder="last name" class="empname" name="empname" required>
     </div>
-    <div>
+    <div id="coursesSection">
         <label for="">Select Courses to entroll</label>
-        <input required checked type="checkbox" id="cb1"  name="courses" value="web basics"><label for="cb1" >WEB BASICS</label>
-        <input type="checkbox" id="cb2"  name="courses" value="react"><label for="cb2">REACT</label>
-        <input type="checkbox" id="cb3"  name="courses" value="angular"><label for="cb3">ANGULAR</label>
-        <input type="checkbox" id="cb4"  name="courses" value="node"><label for="cb4">NODE</label>
     </div>
     <div>
         <label for="department">Select your Department:</label>
+
         <select name ="deparment" id="department">
             <option value="dotnet" selected>Dot Net</option>
             <option value="devops">DevOps</option>
@@ -33,15 +30,31 @@
     </div> 
     </form>
     <script>
-       const nameelements=document.getElementsByName("empname");
-       console.log(nameelements);
-       let myname="";
-      function collectname(){
-        event.preventDefault();
-        for(let nameele of nameelements )
-            myname=myname+" "+nameele.value;
-        console.log(myname.trim());
-      }
+        const nameelements=document.getElementsByName("empname");
+        console.log(nameelements);
+        let myname="";
+        function collectname(){
+            event.preventDefault();
+            for(let nameele of nameelements )
+                myname=myname+" "+nameele.value;
+            console.log(myname.trim());
+        }
+
+        const courses=['java', 'node','web basics', 'angular'];
+        courses.sort();
+
+        const courseSection=document.getElementById("coursesSection");
+
+        for(let course of courses){
+            //DOM method
+            const checkEle=document.createElement('input');
+            const label=document.createElement('label');
+            label.textContent=course.toUpperCase();
+            checkEle.type="checkbox";
+            checkEle.name="companycourses";
+            courseSection.append(checkEle);
+            courseSection.append(label);
+        }
     </script>
 </body>
 </html>
