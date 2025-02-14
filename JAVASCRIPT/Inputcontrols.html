@@ -7,7 +7,7 @@
 </head>
 <body>
     <h3>Neosoft Course Registation Form</h3> 
-    <form action="servlet path" method="post">
+    <form action="servlet path"   onsubmit="collectname()">
         <label>Enter your name:</label>
         <label for="fname">First name</label>
         <input id="fname" class="empname" name="empname" value="neo" minlength="2" required> 
@@ -29,12 +29,19 @@
             <option value="javaweb">Java Web</option>
             <option value="learninganddevelopment">L&D</option>
         </select>
-    </div>
+        <input type="submit">
+    </div> 
     </form>
     <script>
        const nameelements=document.getElementsByName("empname");
        console.log(nameelements);
-       
+       let myname="";
+      function collectname(){
+        event.preventDefault();
+        for(let nameele of nameelements )
+            myname=myname+" "+nameele.value;
+        console.log(myname.trim());
+      }
     </script>
 </body>
 </html>
