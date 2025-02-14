@@ -111,7 +111,7 @@ includes
 split */
 // once done with above methods please put done in chat
 
-// slice, substring : trainer
+// slice, substring : trainer     si<ei
 const message="hello how r u?";
 
 console.log(message.substring(1,4));
@@ -126,6 +126,7 @@ console.log(message.slice(-1));
 console.log(message.substring(-1, 5)); // - to 0, 5
 console.log(message.slice(-1, 5));  // empty string
 
+console.log(message.slice(-12, 12));  
 
 
 
