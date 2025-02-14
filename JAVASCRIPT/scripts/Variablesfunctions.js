@@ -121,10 +121,65 @@ for (let arrvalue of arr){
 }
 console.log("-------------------");
 /* forEach */
-arr.forEach((vl)=>console.log(vl));
+arr.forEach((vl)=>console.log(vl)); // innerloop
 
 /* <60*/
 const filterarr=arr.filter((val)=>val<60);
-console.log(filterarr);
+filterarr.forEach((v)=>console.log(v));
 /* function chaining */
-arr.filter((val)=>val<60).forEach((filtval)=>console.log(filtval))
+arr
+.filter((val)=>val<60)
+.forEach((filtval)=>console.log(filtval))
+console.log(arr);
+
+
+const names=['Kiran','Amol', 'Kavita','aman','Savita','Amant'];
+/* 
+show names starting with 'A' /'a'  : startsWith */
+
+const namesA = names.filter(name => name.toUpperCase().startsWith("A"));
+console.log(namesA);
+
+
+/* show first name from array starting with 'A' /'a'  : startsWith  */
+
+const nameA = names.find(name => name.toUpperCase().startsWith("A"));
+console.log(nameA);
+
+/* prefix Neo- to every name of array : map*/
+const newnames=names.map((name)=>'Neo-'+name);
+console.log(newnames);
+/*  chaining  of map and forEach*/
+
+arr=[67,89,56,45,89,45];
+/* double each number of an array and store into new array*/
+arr.map((val)=>val*2).forEach((mappedvalue)=>console.log(mappedvalue))
+
+console.log("---------------");
+
+/* add all numbers of array : reduce*/
+
+const summ=arr.reduce((accumulator,value)=>accumulator+value);
+/* accumulator = 67, value = 89, 67+89=156
+accumulator =156, value 56, 156+56=212
+accmulator = 212, value= 45 212+55
+...... */
+console.log(summ);
+
+
+
+const summ2=arr.reduce((accumulator,value)=>accumulator+value,0);
+/* accumulator =0, value = 67, 0+67=67
+ accumulator =67 ,value=89, 67+89=156
+accumulator =156, value 56, 156+56=212
+accmulator = 212, value= 45 212+55
+...... */
+console.log(summ2);
+
+let arr1=[5,4,51,3];
+let arr2=[6,2,1,4];
+
+const sum1=arr1.reduce((acc, val)=>acc+val);
+const sum2=arr2.reduce((acc,val)=>acc+val,sum1)
+console.log("Addition od arr1 and arr2: "+sum2);
+
