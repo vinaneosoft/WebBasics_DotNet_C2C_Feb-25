@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <b id="rangop"></b>
+    <span id="minrange"></span><input title="agerange" type="range" 
+    id="agerange" min="18" max="50" value="22" 
+    onchange="getValue()" oninput="getValue()">
+    <script>
+        const rangeEle=document.getElementById('agerange');
+        const bele=document.getElementById('rangop');
+        const spanele1=document.getElementById("minrange");
+        spanele1.textContent=rangeEle.min;
+        rangeEle.max=70;
+        function getValue(){
+            console.log(rangeEle.value);
+            bele.textContent=rangeEle.value;
+        }
+    </script>
+</body>
+</html>
