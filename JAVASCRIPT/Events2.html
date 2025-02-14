@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title>
+</head>
+<body>
+    <div>
+        <label for="pass">Password:</label>
+        <input type="password" id="pass">
+        <input type="checkbox"  onchange="showpassword()" id="showpass"> <label for="showpass">:Show password</label>
+    </div>
+
+    <script>
+        // how to access the checkbox : with id
+        const passElement=document.getElementById("pass");
+        function showpassword(){
+            let checkbox=event.target;
+            console.log(checkbox.checked);
+            if(checkbox.checked)
+                passElement.type="text";
+            else
+                passElement.type="password";
+        }
+    </script>
+</body>
+</html>

@@ -27,6 +27,8 @@
 
 
         let inputEle=document.getElementById("myname");
+        console.log(inputEle);
+        
         inputEle.addEventListener("focus", ()=>extractName());
         inputEle.addEventListener("keyup", ()=>extractName());
         function extractName(){
