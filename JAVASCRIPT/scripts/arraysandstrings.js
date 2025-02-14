@@ -67,17 +67,64 @@ console.log(city);
 const a=89;
 /* a=90;  */// error
 
-
 const company="neosoft";
-/* company=company+" rabale" */;
+/* company=company+" rabale"; */
 const concated=company+" rabale"
 console.log(concated);
 console.log(company);
 
 
+let n1=67;
+let n2=67;
+console.log(n1==n2);
+
+let india1=new String('india');
+let india2=new String('india');
+console.log(india1==india2); // mem loc comp
+console.log(india1.valueOf()==india2.valueOf()); // value comp
 
 
+const c1="neosoft";
+const c2="neosoft";
+console.log(c1==c2); // mem loc  true
+console.log(c1.valueOf()==c2.valueOf()); // true
 
+console.log("------------");
+
+let v1=90;
+let v2='90';
+console.log(v1==v2); //true, loose type checking
+console.log(v1===v2); // false, strict type checking
+
+console.log("------------");
+
+let st1=new String(56);
+let st2=new String('59');
+console.log(st1==st2); // ml false
+console.log(st1===st2); // ml false
+/* 
+replace, replaceAll
+charAt,
+indexOf
+lastIndexOf
+includes
+split */
+// once done with above methods please put done in chat
+
+// slice, substring : trainer
+const message="hello how r u?";
+
+console.log(message.substring(1,4));
+console.log(message.slice(1,4));
+
+console.log(message.substring(1));
+console.log(message.slice(1));
+
+console.log(message.substring(-1)); // - to 0
+console.log(message.slice(-1)); 
+
+console.log(message.substring(-1, 5)); // - to 0, 5
+console.log(message.slice(-1, 5));  // empty string
 
 
 
