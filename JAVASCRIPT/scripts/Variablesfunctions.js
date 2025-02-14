@@ -190,4 +190,6 @@ names=['Kiran','amol', 'Kavita','aman','Savita','Amant', 'Zinat', 'Zahar'];
 const concatstring=names.map((name)=>name.charAt(0).toUpperCase()).reduce((acc,letter)=> acc+letter);
 console.log(concatstring);
 
-names.filter((name)=>name.toUpperCase().startsWith('A') || name.toUpperCase().startsWith('Z')).forEach((name)=>console.log(name))
+names
+    .filter((name)=>name.toUpperCase().startsWith('A') || name.toUpperCase().startsWith('Z'))
+    .forEach((name)=>console.log(name))
