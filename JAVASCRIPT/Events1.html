@@ -8,7 +8,7 @@
 <body>
     <img src="./resources/images/water.jpg" alt="water" onmouseover="showAlert()">
     <button type="button" onclick="cofirmation()">SUBMIT EXAM</button>
-    <input type="text" placeholder="enter your name">
+    <input type="text" placeholder="enter your name" id="myname">
 
     <script>
         function showAlert(){
@@ -18,6 +18,20 @@
             const status=window.confirm("Do you really want to submit exam?");
             if(status)
                 window.alert("Submitted......");
+        }
+        const value=window.prompt("Enter your age to proceed");
+        window.alert("you entered "+value);
+        console.log(typeof value);
+        const parsedValue=parseFloat(value);
+        console.log(typeof parsedValue);
+
+
+        let inputEle=document.getElementById("myname");
+        inputEle.addEventListener("focus", ()=>extractName());
+        inputEle.addEventListener("keyup", ()=>extractName());
+        function extractName(){
+            console.log("function called...");
+           console.log(inputEle.value);
         }
     </script>
 </body>
