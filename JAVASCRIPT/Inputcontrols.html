@@ -29,7 +29,7 @@
         <input id="mname" type="text" title="middle name" class="empname" name="empname"> 
         <input id="lname" type="text"  placeholder="last name" class="empname" name="empname" required>
     </div>
-    <div id="coursesSection" onmouseover="setStyle()" onmouseout="resetStyle()">
+    <div id="coursesSection" onmouseover="setStyle()" onmouseout="resetStyle()" class="abc">
         <label for="">Select Courses to entroll :</label> <br>
     </div>
     <div>
@@ -79,10 +79,11 @@
           //  courseSection.style.cssText=
             //"background-image:linear-gradient(yellow, pink); border:4px double purple" // inline style
 
-            courseSection.classList.add("courseStyle");
+            courseSection.classList.add("courseStyle"); // it will not override existing classes
         }
         function resetStyle(){
          //   courseSection.style="";
+         courseSection.classList.remove("courseStyle");
         }
      
     </script>
