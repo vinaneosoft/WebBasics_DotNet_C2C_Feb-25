@@ -47,6 +47,8 @@
         const userErrorEle=document.getElementById('usererror');
         const passErrorEle=document.getElementById('passerror');
         const cpassErrorEle=document.getElementById('cpasserror');
+
+        const passwordPattern=new RegExp("(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[@#&]).*");
         function validateUsername(){
             const username=usernameEle.value;
             if(username=="")
@@ -58,8 +60,15 @@
         }
         function validatePassword(){
             const password=passEle.value;
-            if(password=="")
+            if(password==""){
                 passErrorEle.textContent="password is required";
+            }
+            else if(passwordPattern.test(password)==false){
+                passErrorEle.textContent="password must have atleast..........";
+            }
+            else if(password.length<8 || password.length>12){
+                passErrorEle.textContent="password must be 8 to 12 characters long"
+            }
             else{
                 passErrorEle.textContent="";
                 passEle.style.border='2px solid green';
