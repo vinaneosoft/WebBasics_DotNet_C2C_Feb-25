@@ -3,24 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Validation</title>
 </head>
 <body>
     <h4>User Registration</h4>
-    <form>
+    <form novalidate>
         <div>
             <label for="username">Set Username:</label>
-            <input type="text"  id="username" >
+            <input type="text"  id="username" required>
         </div>
         <br>
         <div>
             <label for="password">Set Password:</label>
-            <input type="text"  id="password" >
+            <input type="text"  id="password" required>
         </div>
         <br>
         <div>
             <label for="confpassword">Confirm Password:</label>
-            <input type="text"  id="confpassword" >
+            <input type="text"  id="confpassword" required>
         </div>
         <input type="submit" value="REGISTER">
     </form>
