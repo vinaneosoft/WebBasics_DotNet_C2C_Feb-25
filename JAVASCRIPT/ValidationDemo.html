@@ -13,7 +13,7 @@
 <body>
     <h4>User Registration</h4>
    
-    <form novalidate>
+    <form action="abcd" novalidate onsubmit="return validateAll()">
         <div>
             <label for="username">Set Username:</label>
             <input type="text"  id="username" onblur="validateUsername()" required>
@@ -51,37 +51,57 @@
         const passwordPattern=new RegExp("(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[@#&]).*");
         function validateUsername(){
             const username=usernameEle.value;
-            if(username=="")
+            if(username==""){
                 userErrorEle.textContent="username is required";
+                return false;
+            }
             else{
                 userErrorEle.textContent="";
                 usernameEle.style.border='2px solid green';
+                return true;
             }
         }
         function validatePassword(){
             const password=passEle.value;
             if(password==""){
                 passErrorEle.textContent="password is required";
+                return false;
             }
             else if(passwordPattern.test(password)==false){
                 passErrorEle.textContent="password must have atleast..........";
+                return false;
             }
             else if(password.length<8 || password.length>12){
                 passErrorEle.textContent="password must be 8 to 12 characters long"
+                return false;
             }
             else{
                 passErrorEle.textContent="";
                 passEle.style.border='2px solid green';
+                return true;
             }
         }
         function validateConfirmPassword(){
             const confirmpassword=cpassEle.value;
-            if(confirmpassword=="")
+            const password=passEle.value;
+            if(confirmpassword==""){
                 cpassErrorEle.textContent="password confirmation is required";
+                return false;
+            }
+            else if(confirmpassword!=password){
+                cpassErrorEle.textContent="password must match"
+                return false;
+            }
             else{
                 cpassErrorEle.textContent="";
                 cpassEle.style.border='2px solid green';
+                return true;
             }
+        }
+        function validateAll(){
+            if(all fields are valid)
+                return true;
+            else return false;
         }
     </script>
 </body>
