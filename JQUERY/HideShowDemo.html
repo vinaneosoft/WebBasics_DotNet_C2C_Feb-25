@@ -17,6 +17,7 @@
 </head>
 <body>
     <button type="button"  id="eventbtn">HIDE</button>
+    <button type="button"  id="togglebtn">TOGGLE</button>
     <figure>
         <img class="suriseimages" src="https://th.bing.com/th/id/R.3b66decd91b5f9890a0d75bebd22bdd3?rik=EIUY6lhTtpyAiw&riu=http%3a%2f%2fgetwallpapers.com%2fwallpaper%2ffull%2f1%2f2%2fa%2f638175.jpg&ehk=YNAN%2biUl2ZtLeocp6DKnNwDKWQ9R4N1gl7yP%2fyeBvfI%3d&risl=&pid=ImgRaw&r=0"
     alt="sunrise">
@@ -31,6 +32,8 @@
         $("#eventbtn").click(()=>{
             if($("#eventbtn").text()=='HIDE'){
                     $(".suriseimages").hide(400, ()=>{
+                        console.log("hi");
+                        
                     //button label to change only after hide effect gets completed
                     $("#eventbtn").text("SHOW"); // innerText, textContent, DOM function
                 });
@@ -41,6 +44,14 @@
                 });
             }
         });
+        $("#togglebtn").click(()=>{
+            //timer: common for hide 500 and show 500,
+            //callback : commong for hide, callback, number of selection and show, callback number of selection
+            $(".suriseimages").toggle(500,()=>{
+                window.alert("operation done.....");
+            });
+        });
+
     </script>
 </body>
 </html>
