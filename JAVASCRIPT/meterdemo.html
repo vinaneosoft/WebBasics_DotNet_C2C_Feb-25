@@ -25,11 +25,14 @@
     const fuelMeter=document.getElementById("fuelindicator");
    // fuelMeter.value=fuelMeter.min;
     function fillFuel(){
+      
+        
         const fillInterval=window.setInterval(()=>{
           fuelMeter.value++;
+          console.log(fuelMeter.value);
           if(fuelMeter.value==fuelMeter.max)
             window.clearInterval(fillInterval);
-        }, 200)
+        }, 50)
     }
   </script>
 </div>
