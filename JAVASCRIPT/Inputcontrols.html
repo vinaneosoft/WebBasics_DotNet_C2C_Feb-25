@@ -63,16 +63,22 @@
             const label=document.createElement('label');
             label.textContent=courses[i].toUpperCase();
             label.id='label'+i;
-            label.classList.add('checkBoxLabel');
-            courseSection.append(checkEle);
+            label.classList.add('checkBoxLabel'); // bcz class attribute may contain many values
+            courseSection.append(checkEle); // parentelement.append.chidlelement
             courseSection.append(label);
         }
 
         function setStyle(){
-            courseSection.style.backgroundImage='linear-gradient(yellow, pink)'; // style: DOM property
+           // courseSection.style.backgroundImage='linear-gradient(yellow, pink)'; // style: DOM property
+           // courseSection.style.border='4px double violet'
+
+            courseSection.style.cssText=
+            "background-image:linear-gradient(yellow, pink); border:4px double purple"
+
+
         }
         function resetStyle(){
-            courseSection.style="";
+         //   courseSection.style="";
         }
      
     </script>
