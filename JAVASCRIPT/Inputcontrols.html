@@ -35,7 +35,7 @@
     <div>
         <label for="department">Select your Department:</label>
 
-        <select name ="deparment" id="department">
+        <select name ="deparment" id="department" onchange="getDepartment()">
             <option value="dotnet" selected>Dot Net</option>
             <option value="devops">DevOps</option>
             <option value="javaweb">Java Web</option>
@@ -90,17 +90,26 @@
         for(let checkbox of checkboxList){ 
             checkbox.addEventListener('change', ()=>{
                 selectedCourses=[];
-                for(let checkbox of checkboxList)
-                    {
+
+
+                for(let checkbox of checkboxList){
                         if(checkbox.checked)
                             selectedCourses.push(checkbox.value);
                     }
                 console.log(selectedCourses);
             })
         }
-
-        
-
+        function getDepartment(){   
+                console.log(event.target.value);
+                
+        }    
+        // same styling to all label tags of document
+        const labels=document.getElementsByTagName('label');
+        console.log(labels);
+        for(let label of labels){
+           label.style.color="darkblue";
+        }
+        /*getElementById, getElementsByName, getElementsByTagName, getElementsByClassName*/
     </script>
 </body>
 </html>
