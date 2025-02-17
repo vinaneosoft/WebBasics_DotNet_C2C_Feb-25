@@ -25,10 +25,9 @@
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script>
         $("#eventbtn").click(()=>{
-            //button label change to show only after hide effect gets completed
-           
             if($("#eventbtn").text()=='HIDE'){
                     $(".suriseimages").hide(400, ()=>{
+                    //button label to change only after hide effect gets completed
                     $("#eventbtn").text("SHOW"); // innerText, textContent, DOM function
                 });
             }
