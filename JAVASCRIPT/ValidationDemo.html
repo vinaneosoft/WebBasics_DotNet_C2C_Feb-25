@@ -12,6 +12,7 @@
 </head>
 <body>
     <h4>User Registration</h4>
+   
     <form novalidate>
         <div>
             <label for="username">Set Username:</label>
@@ -26,7 +27,7 @@
             <input type="text"  id="password" onblur="validatePassword()" required>
         </div>
         <div class="errorMessage">
-            <span id="passerror"></span>
+            <small id="passerror"></small>
         </div>
         <br>
         <div>
@@ -34,7 +35,7 @@
             <input type="text"  id="confpassword"  onblur="validateConfirmPassword()"  required>
         </div>
         <div class="errorMessage">
-            <span id="cpasserror"></span>
+            <small id="cpasserror"></small>
         </div>
         <input type="submit" value="REGISTER">
     </form>
@@ -49,14 +50,18 @@
         function validateUsername(){
             const username=usernameEle.value;
             if(username=="")
-            userErrorEle.textContent="username is required";
+                userErrorEle.textContent="username is required";
 
         }
         function validatePassword(){
-
+            const password=passEle.value;
+            if(password=="")
+                passErrorEle.textContent="password is required";
         }
         function validateConfirmPassword(){
-
+            const confirmpassword=cpassEle.value;
+            if(confirmpassword=="")
+                cpassErrorEle.textContent="password confirmation is required";
         }
     </script>
 </body>
