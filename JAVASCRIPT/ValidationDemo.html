@@ -51,17 +51,28 @@
             const username=usernameEle.value;
             if(username=="")
                 userErrorEle.textContent="username is required";
-
+            else{
+                userErrorEle.textContent="";
+                usernameEle.style.border='2px solid green';
+            }
         }
         function validatePassword(){
             const password=passEle.value;
             if(password=="")
                 passErrorEle.textContent="password is required";
+            else{
+                passErrorEle.textContent="";
+                passEle.style.border='2px solid green';
+            }
         }
         function validateConfirmPassword(){
             const confirmpassword=cpassEle.value;
             if(confirmpassword=="")
                 cpassErrorEle.textContent="password confirmation is required";
+            else{
+                cpassErrorEle.textContent="";
+                cpassEle.style.border='2px solid green';
+            }
         }
     </script>
 </body>
