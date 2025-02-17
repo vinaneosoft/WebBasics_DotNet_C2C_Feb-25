@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CDN</title>
+    <style>
+        .suriseimages{
+            height: 300px;
+            width: 300px;
+        }
+    </style>
+</head>
+<body>
+   <img class="suriseimages" src="https://th.bing.com/th/id/R.3b66decd91b5f9890a0d75bebd22bdd3?rik=EIUY6lhTtpyAiw&riu=http%3a%2f%2fgetwallpapers.com%2fwallpaper%2ffull%2f1%2f2%2fa%2f638175.jpg&ehk=YNAN%2biUl2ZtLeocp6DKnNwDKWQ9R4N1gl7yP%2fyeBvfI%3d&risl=&pid=ImgRaw&r=0"
+    alt="sunrise">
+    <button type="button"  id="eventbtn">CLICK</button>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script>
+        console.log($('.suriseimages'));
+        // event function : click, mouseover, focus, blur, 
+        // callback strategy
+        $("#eventbtn").click(()=>{
+            //$('.suriseimages').remove(); // DOM function
+           $('.suriseimages').hide(1000); // effect function
+        });
+
+       
+    </script>
+</body>
+</html>
