@@ -4,29 +4,52 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Validation</title>
+    <style>
+        .errorMessage{
+            color: red;
+        }
+    </style>
 </head>
 <body>
     <h4>User Registration</h4>
     <form novalidate>
         <div>
             <label for="username">Set Username:</label>
-            <input type="text"  id="username" required>
+            <input type="text"  id="username" onblur="validateUsername()" required>
+        </div>
+        <div class="errorMessage">
+            <small id="usererror"></small>
         </div>
         <br>
         <div>
             <label for="password">Set Password:</label>
-            <input type="text"  id="password" required>
+            <input type="text"  id="password" onblur="validatePassword()" required>
+        </div>
+        <div class="errorMessage">
+            <span id="passerror"></span>
         </div>
         <br>
         <div>
             <label for="confpassword">Confirm Password:</label>
-            <input type="text"  id="confpassword" required>
+            <input type="text"  id="confpassword"  onblur="validateConfirmPassword()"  required>
+        </div>
+        <div class="errorMessage">
+            <span id="cpasserror"></span>
         </div>
         <input type="submit" value="REGISTER">
     </form>
 
     <script>
+        const usernameEle=document.getElementById("username");
+        const passEle=document.getElementById("password");
+        const cpassEle=document.getElementById("confpassword");
+        const userErrorEle=document.getElementById('usererror');
+        const passErrorEle=document.getElementById('passerror');
+        const cpassErrorEle=document.getElementById('cpasserror');
         function validateUsername(){
+            const username=usernameEle.value;
+            if(username=="")
+            userErrorEle.textContent="username is required";
 
         }
         function validatePassword(){
