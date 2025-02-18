@@ -20,7 +20,13 @@
         });
        console.log($('[type="text"]').css("border-radius", '30px')); // style on multiple selection
        console.log($('[type="text"]').val()); // first value
-       // in above case external looping needed
+       // val() :must be used on individual selection otherwise 
+       //  external looping needed
+       $('[type="text"]').each((index,ele)=>{
+            console.log(index);
+            console.log(ele); // JS DOM element
+            console.log(ele.value); // JS Logic
+       });
     </script>
 </body>
 </html>
