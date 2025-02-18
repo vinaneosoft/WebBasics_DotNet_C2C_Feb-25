@@ -27,9 +27,17 @@ console.log(account4);
 
 const account5=new BankAccount("salary", 200000, 'sc1235', 5454545454); 
 console.log(account5);
+let updatedBalance=account5.deposit(45000);
+console.log(updatedBalance);
+console.log(account5.accountBalance);
 
 const account6=new BankAccount(); // initialize
 console.log(account6);
+// state change
+account6.accountNumber=999999;
+account6.customerId="SC4545";
+account6.accountBalance=78000;
+
 // then use setters to changes default values
 
 
