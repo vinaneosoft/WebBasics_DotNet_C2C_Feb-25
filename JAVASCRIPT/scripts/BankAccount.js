@@ -42,7 +42,7 @@ account6.accountBalance=78000;
 
 // display value of each instance variable of object account6
 
-console.log(account6.accountBalance);
+console.log(account6.accountBalance); // dot notation
 console.log(account6.accountType);
 console.log(account6.customerId);
 console.log(account6.accountNumber);
