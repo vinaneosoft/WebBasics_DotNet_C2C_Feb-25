@@ -1,14 +1,14 @@
 
-class BankAccount{
+export class BankAccount{
     #accountNumber;
     accountType;
     accountBalance;
     customerId;
-    constructor(type='savings', accbal=0,cid='SC0',accnum=0){
-       this.accountBalance=accbal;
-       this.#accountNumber=accnum;
-       this.accountType=type;
-       this.customerId=cid;
+    constructor(accountType='savings', accountBalance=0,customerId='SC0',accountNumber=0){
+       this.accountBalance=accountBalance;
+       this.#accountNumber=accountNumber;
+       this.accountType=accountType;
+       this.customerId=customerId;
     }
     deposit(amount){
         this.accountBalance=this.accountBalance+amount;

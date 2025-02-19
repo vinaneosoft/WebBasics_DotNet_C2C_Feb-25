@@ -40,5 +40,23 @@ account6.accountBalance=78000;
 
 // then use setters to changes default values
 
+// display value of each instance variable of object account6
 
+console.log(account6.accountBalance);
+console.log(account6.accountType);
+console.log(account6.customerId);
+console.log(account6.accountNumber);
 
+console.log(account6['accountType']); // index signature
+console.log(account6['accountBalance']); 
+console.log(account6['customerId']); 
+console.log(account6['accountNumber']); 
+
+let key='accountNumber';
+console.log("account number with index signature:"+account6[key]);
+
+for(let key in account6){
+    console.log(key);
+   // console.log(account6.key);
+    console.log(account6[key]); // index signature
+}
